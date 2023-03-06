@@ -47,7 +47,7 @@ export default function FormattedInputs(props) {
       <TextField
         label={props.label}
         value={props.valuePrice}
-        onChange={(e) => props.handleChange(e)}
+        onChange={(e) => props.onChange(e)}
         name="numberformat"
         id="formatted-numberformat-input"
         InputProps={{
