@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
 
 function NumberFormatCustom(props) {
   const { inputRef, onChange, ...other } = props;
+
   return (
     <NumericFormat
       {...other}
@@ -45,8 +46,8 @@ export default function FormattedInputs(props) {
     <div className={classes.root}>
       <TextField
         label={props.label}
-        value={props.value}
-        onChange={props.onChange}
+        value={props.valuePrice}
+        onChange={(e) => props.handleChange(e)}
         name="numberformat"
         id="formatted-numberformat-input"
         InputProps={{
